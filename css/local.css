@@ -1,3 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900');
 
 html, body{font-family: 'Catamaran', sans-serif;}
+a:hover, a:active, a:focus{ text-decoration: none; outline: none;}
+input:focus, input:active, textarea:active, textarea:focus, button:active, button:focus{ outline: none; box-shadow: none;}
+
+/*header*/
+.upper-head {background: #e68582;}
+.search-bar button {height: 45px; width: 45px; padding: 10px;  margin: 0;  background: transparent; border: 0; border-radius: 0; display: inline-block; vertical-align: middle;}
+.search-bar input {width: calc(100% - 49px);  height: 45px; border: 0; border-radius: 0;  background: transparent;  border-left: 1px solid #fff; display: inline-block; color: #fff; padding-left: 15px;}
+.social-media ul li a, .social-media ul li a img { display: block;}
+.social-media {text-align: right;}
+.social-media ul li { display: inline-block; padding: 10px;}
+.search-bar ::-webkit-input-placeholder {color: #fff;}
+.search-bar input ::-moz-placeholder {color: #fff;}
+.search-bar :-ms-input-placeholder {color: #fff;}
+.search-bar input :-moz-placeholder {color: #fff;}
+.custom-header {position: relative; z-index: 9;}
+/*menu*/
+.menu-area ul li a {display: block; color: #000; text-transform: uppercase; font-size: 14px; position: relative;}
+.menu-area ul li {display: inline-block; padding: 18px;}
+.mini-cart-area ul li {display: inline-block; padding: 10px; position: relative;}
+.mini-cart-area ul li a img {display: block; max-width: 20px;}
+.mini-cart-area ul li a {display: block;}
+.mini-cart-area ul li a span {position: absolute; color: #e68582; top: 0; font-size: 16px; right: 0;}
+.mini-cart-area {text-align: right; position: relative;}
+.menu-area > ul {text-align: right;}
+.lower-head .row {align-items: center;}
+.mini-cart-area:before {content: ''; height: 20px; width: 1px; background: #a0a0a0; position: absolute; left: 0; top: 0; bottom: 0; margin: auto;}
+.lower-head {padding: 25px 0;}
+li.menu-item-has-children:after {content: "\f107"; font-family: 'FontAwesome'; position: absolute; right: 0; top: 16px;}
+li.menu-item-has-children{ position: relative;}
+.sub-menu li:last-child a {border: 0;}
+.sub-menu li a {padding: 13px; border-bottom: 1px solid rgba(0,0,0,0.3); transition: 0.3s ease}
+.sub-menu li a:hover {color: #fff;}
+.sub-menu li {background: #e68582; padding: 0 !important;  display: block !important;}
+.sub-menu {display: none; position: absolute; left: 0; text-align: left; width: 200px; padding-top: 20px; animation: fadeInUp 0.3s ease;}
+.menu-item-has-children:hover .sub-menu{ display: block;}
+.menu-area ul li:hover > a:after {width: 100%;}
+.menu-area ul li a:after {content: ''; height: 2px; width: 0; background: #e68582; position: absolute; bottom: -5px; left: 0; right: 0; margin: auto; transition: 0.3s ease;}
+.sub-menu li a:after{ display: none;}
+.mini-cart-area button{ display: none;}
+/*end*/
+
+/*banner area*/
+.caption-area {position: absolute; left: 0; right: 0; top: 50%; transform: translate(0, -50%);}
+.caption h2 {font-size: 36px; color: #e68582;}
+.caption p {font-size: 23px; margin: 0; line-height: normal;}
+.view-collection {display: block; background: #292929; color: #fff; font-size: 20px; max-width: 200px; text-align: center; height: 40px; line-height: 40px; margin-top: 6%; transition: 0.3s ease; border: 1px solid #292929;}
+.banner-area .carousel-item img {display: block;}
+.caption {background: #fff; padding: 5% 4%; max-width: 550px; animation: fadeInLeft 0.3s ease; display: none;}
+.view-collection:hover {background: transparent; color: #000;}
+.carousel-item.active .caption {display: block;}
+/*end*/
+
+
+/*media*/
+
+@media(max-width:1199px){
+    .menu-area ul li {display: inline-block; padding: 15px;}
+}
+
+@media(max-width:991px){
+    .menu-area > ul {text-align: left;}
+    .menu-area ul li {display: block; padding: 0;}
+    .menu-area ul li a {display: block; border-bottom: 1px solid #292929; padding: 15px;}
+    .menu-area ul li:last-child a {border: 0;}
+    .menu-area ul li a:after{ bottom: -1px}
+    .sub-menu {position: static;width: 100%;padding-top: 0;}
+    li.menu-item-has-children:after {content: "\f107";font-family: 'FontAwesome';position: absolute;right: 0;z-index: 2;background: #292929;width: 40px;top: 0;color: #fff;text-align: center;line-height: 45px;}
+    .mini-cart-area ul {display: inline-block; vertical-align: middle;}
+    .mini-cart-area button {padding: 0; margin: 0;background: transparent;border: 0;font-size: 24px;vertical-align: middle; display: inline-block;}
+}
+
+@media (max-width:400px){
+    .mini-cart-area ul li {padding: 10px 5px;}
+/*end*/
