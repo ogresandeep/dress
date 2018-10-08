@@ -2,7 +2,7 @@
 
 html, body{font-family: 'Catamaran', sans-serif;}
 a:hover, a:active, a:focus{ text-decoration: none; outline: none;}
-input:focus, input:active, textarea:active, textarea:focus, button:active, button:focus{ outline: none; box-shadow: none;}
+input:focus, input:active, textarea:active, textarea:focus, button:active, button:focus, select:active, select:focus{ outline: none; box-shadow: none;}
 
 /*header*/
 .upper-head {background: #e68582;}
@@ -142,6 +142,45 @@ ul.carousel-indicators li:after, ul.carousel-indicators li:before {display: none
 .features-area.border .col:last-child{ border: 0;}
 /*end*/
 
+/*booking-area*/
+.booking-enquiry-area {padding: 50px 0;}
+.note-area p {text-align: center;color: #e68582;font-size: 20px;padding-bottom: 15px;}
+.note-area {max-width: 750px;margin: 0 auto;padding: 20px;border: 1px solid #e68582;}
+.note-area ul li:before {content: '';height: 12px;width: 12px;background: #e68582;position: absolute;left: 0;border-radius: 100px;top: 5px;}
+.note-area ul li {font-size: 16px;line-height: 24px;margin: 10px 0;color: #222;font-weight: 500;position: relative;padding-left: 25px;}
+.note-area ul {list-style: none;padding: 0;margin: 0;}
+/*form*/
+.red {color: #e68582;}
+.form-field label {position: absolute;bottom: 5px;left: 0; transition: 0.3s ease;}
+.form-field input, .form-field select {width: 100%;display: block;border-radius: 0;height: 40px;border-style: solid;border-color: #ccc;border-width: 0 0 1px 0;}
+.form-field {position: relative; z-index: 0; margin-top:20px;}
+.field-icon {position: absolute;bottom: 5px;right: 0;color: #999;}
+.form-field input, .form-field select {position: relative;z-index: 1;background: transparent; -webkit-appearance: none; appearance: none;}
+label.up {bottom: 35px;font-size: 10px;color: #e68582;}
+.about-dress h3 {margin: 30px 0;font-size: 24px;color: #000;font-weight: 400;}
+.find-link {padding: 25px;}
+.find-link p a { color: #e68582; font-size: 14px; text-decoration: underline;}
+.find-link p {line-height: normal; font-size: 16px;}
+.about-dress {padding: 0 0 50px;}
+.about-dress.event h3 {margin: 0;}
+.pickuo-area p {line-height: 17px;font-size: 16px;color: #666;margin-bottom: 10px;}
+.pickuo-area ul li label:before {content: '';height: 8px;width: 8px;background: #e68582;border-radius: 100px;position: absolute;left: 2px;z-index: 1;top: 2px;display: none;}
+.pickuo-area ul li label {margin: 0;vertical-align: middle;padding-left: 3px;}
+.pickuo-area ul li label:after {content: '';height: 14px;width: 14px;position: absolute;background: #fff;left: -1px;top: -1px;border-radius: 100px;border: 1px solid #e68582;}
+.pickuo-area ul li input {position: relative;z-index: 3;opacity: 0;margin: 0;}
+.pickuo-area ul li {display: inline-block;padding: 0 20px 0 0;position: relative;vertical-align: middle;}
+.pickuo-area ul li input:checked + label:before {display: block;}
+.pickuo-area h5 {margin: 10px 0;font-size: 18px;}
+.pickuo-area p strong {display: block;margin: 20px 0;}
+.pickuo-area {padding: 15px 0 0;}
+ul.display li {display: block;margin: 10px 0;}
+.display li label:after{ border-color: #aaa !important}
+.send-enquery-btn input {background: #000;border: 0;border-radius: 0;height: 40px;width: 200px;color: #fff;font-size: 18px;line-height: 40px;padding: 0;display: block;margin: 0 auto; transition: 0.3s ease;}
+.send-enquery-btn input:hover, .send-enquery-btn input:active, .send-enquery-btn input:focus{ background: #e68582; color: #fff;}
+.form-content p {font-size: 16px;line-height: normal;margin: 0;}
+.form-content {padding: 50px 0;}
+/*end*/
+
 
 /*media*/
 
@@ -188,6 +227,8 @@ ul.carousel-indicators li:after, ul.carousel-indicators li:before {display: none
     .copy-rights-aera p {text-align: center;}
     .features-area.border .col:last-child, .features-area.border .col:nth-child(3) {border-right: 1px solid #999;}
     .features-area.border .col:nth-child(2), .features-area.border .col:nth-child(4){border-right: 0;}
+    .find-link {padding: 25px 0;}
+    .booking-enquiry-area {padding: 30px 0 0;}
 
 }
 
@@ -228,6 +269,8 @@ ul.carousel-indicators li:after, ul.carousel-indicators li:before {display: none
     .subscribe-form {padding: 10px 0 0;}
     .subscribe-area h3 {font-size: 18px;}
     .caption {max-width: 270px;margin: 0 auto;}
+    .form-field label{ font-size: 12px;}
+    label.up {font-size: 10px;}
 
 }
 

@@ -8,4 +8,24 @@ $(document).ready(function(){
     $('.drop').click(function(){
         $(this).siblings('.sub-menu').stop().slideToggle();
     })
+
+
+    /*form*/
+    $('.label-anime').focus(function(){
+	    var txt = $(this);
+        $(this).siblings('label').addClass('up');
+    });
+      
+    $('.label-anime').blur(function(){
+        var txt = $(this);
+        $(this).siblings('label').removeClass('up');
+        if (txt.val() != null && txt.val() != '') {
+            $(this).siblings('label').addClass('up');
+        } 
+    });
+
+
+    /*date picker*/
+    
+
 });
