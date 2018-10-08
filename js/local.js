@@ -26,6 +26,6 @@ $(document).ready(function(){
 
 
     /*date picker*/
-    
+    $( "#date1" ).datepicker();
 
 });
