@@ -153,6 +153,7 @@ ul.carousel-indicators li:after, ul.carousel-indicators li:before {display: none
     .custom-footer .col-lg-3:first-child {border-width: 0 0px 1px 1px;}
     .menu-area {display: none;}
     .sub-menu{ display: block;}
+    .features-area .col {flex: 0 0 33%;-webkit-flex: 0 0 33%;}
     .drop { display: block; height: 45px;width: 40px;position: absolute;background: #292929;text-align: center;color: #fff;line-height: 40px;top: 0;right: 0px;z-index: 1; cursor: pointer;}
     
 }
