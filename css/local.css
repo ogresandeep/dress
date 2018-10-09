@@ -209,6 +209,65 @@ ul.display li {display: block;margin: 10px 0;}
 .collection-products {margin: 10px 0;}
 /*end*/
 
+/*single product page*/
+.product-view-section:after {content: '';display: block;clear: both;}
+.product-tubmb-area {width: 150px;float: left; max-height: 400px;overflow-x: hidden;overflow-y: scroll;}
+.product-large-view-area {width: calc(100% - 150px);float: left; padding-left: 15px;}
+.product-tubmb-area ul li {margin: 10px 0;}
+.product-tubmb-area ul li a img, .product-large-view-area .tab-content li a img {display: block;}
+.product-tubmb-area ul li a, .product-large-view-area .tab-content li a {display: block;border: 5px solid #FFF;}
+.product-view-area{ background: #f5f5f5;}
+.breadcrumbs-area p a {display: inline-block;padding: 0 5px;color: #000;}
+.breadcrumbs-area {padding: 30px 0;}
+.breadcrumbs-area p {margin: 0;color: #000;}
+.product-title .addto-wislist-icon a {font-size: 18px;color: #999;}
+.product-title .addto-wislist-icon {position: absolute;right: 10px;top: 0;}
+.product-title h1 {font-size: 16px;color: #000;}
+.designer-name p, .designer-name p a  {font-size: 12px;color: #000;margin: 0;}
+.designer-name {padding: 10px 0;}
+.accordian-heading {border-style: solid;border-color: #ccc;border-width: 1px 0 0 0;}
+.accordian-heading a {color: #000;display: block;padding: 11px 0;line-height: normal; position: relative;}
+.accordian-heading a:after {content: '\f107';font-family: 'FontAwesome';float: right;font-size: 18px; transition: 0.3s ease; transform: rotate(180deg);}
+.accordian-heading a.collapsed:after {transform: rotate(0);}
+.quantity-area a {display: inline-block;height: 40px;width: 40px;text-align: center;background: #fff;line-height: 40px;border: 1px solid #ccc;color: #333;vertical-align: middle;}
+.quantity-area input {height: 40px;width: 50px;text-align: center;border-radius: 0;vertical-align: middle;margin: 0 -4px;}
+.size-area ul li span {display: block;height: 40px;width: 40px;background: #fff;text-align: center;line-height: 40px;border: 1px solid #ccc;}
+.size-area ul li {display: inline-block;padding: 0 8px 0 0;}
+.color-area ul li span {display: block;height: 40px;width: 40px; border: 1px solid #ccc; background-size: cover;}
+.color-area ul li {display: inline-block;padding: 0 8px 0 0;}
+.size-guid a {color: #666;}
+.size-guid span {display: inline-block;vertical-align: middle;}
+.size-area p, .color-area p, .quantity-area p, .hire-information-area p {font-size: 16px;color: #000;padding: 15px 0;font-weight: 500;}
+.hire-information-area .filters {margin: 0;background: #fff;max-width: 230px;}
+.size-guid {padding: 20px 0 10px;}
+.quantity-area {padding: 15px 0;}
+.price-area {padding: 30px 0;}
+.price-area p {font-size: 24px;color: #000;}
+.hiring-content h5 {font-size: 15px;padding: 10px 0;}
+.hiring-content p a {color: #000;text-decoration: underline;}
+.hiring-content p span {color: #000;font-weight: 500;}
+.hiring-content p {line-height: normal;}
+.hiring-content {padding: 20px 0;}
+.pascode-area .filters {max-width: 230px; margin: 0;}
+.add-to-cart-btn-area button {height: 45px;width: 100%;margin: 0 10px 0 0;border-radius: 0;background: #000;border: 0;color: #fff;text-transform: uppercase;font-size: 16px;max-width: 200px; transition: 0.3s ease;}
+.add-to-cart-btn-area button:hover{ background: #e68582}
+.add-to-cart-btn-area {padding: 30px 0;}
+.product-social-share ul li a {display: block;color: #000;font-size: 16px;transition: 0.3s ease;}
+.product-social-share ul li {display: inline-block;padding: 10px 15px 12px 0;}
+.product-social-share ul li a:hover{color: #e68582}
+.product-view-area {padding: 40px 0;}
+.someone-else-area p i {padding-right: 5px;}
+.someone-else-area p {background: #e68582;color: #fff;font-size: 16px;text-align: center;display: inline-block;padding: 15px;}
+.someone-else-area {position: absolute;bottom: 0;left: 0; animation: fadeInUp 0.3s ease;}
+.related-product-slider .collection-products {padding: 0 10px;}
+.related-product-slider .collection-products .product-img {border: 1px solid #ccc;}
+.related-product-slider button {height: 50px;width: 50px;font-size: 0;background: #fff;border-radius: 100px; position: absolute;top: 30%;margin: auto; border: 0; z-index: 1;}
+.related-product-slider button:after {content: '\f105';font-family: 'FontAwesome';font-size: 30px;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;height: 33px;text-align: center;}
+.related-product-slider button.slick-next{right: 15px;}
+.related-product-slider button.slick-prev{left: 15px; transform: rotate(180deg);}
+.you-might-also-products {padding: 60px 0;}
+/*end*/
+
 /*media*/
 
 @media(max-width:1199px){
@@ -240,6 +299,8 @@ ul.display li {display: block;margin: 10px 0;}
     .features-area.border .col:last-child {border-right: 1px solid #999;}
     .features-area.border .col:nth-child(3){border: 0;}
     .filters{ margin-bottom: 15px;}
+    .product-view-section {padding-bottom: 100px;}
+    .someone-else-area {bottom: 20px;right: 0;margin: auto;text-align: center;}
     
 }
 
@@ -261,6 +322,8 @@ ul.display li {display: block;margin: 10px 0;}
     .product-img {max-height: unset;}
     .filters{ margin: 5px 0;}
     .sorting-area {margin-bottom: 20px;}
+    .product-tubmb-area {width: 100px;}
+    .product-large-view-area {width: calc(100% - 100px);}
 
 }
 
@@ -289,6 +352,7 @@ ul.display li {display: block;margin: 10px 0;}
     .caption p {font-size: 16px; line-height: 22px;}
     .view-collection {margin-top: 10px;font-size: 16px;width: 150px;}
     .features-area .col {-ms-flex: 0 0 100%;flex: 0 0 100%;}
+    .add-to-cart-btn-area button{ width: 170px;}
 }
 
 @media (max-width:400px){
@@ -303,6 +367,18 @@ ul.display li {display: block;margin: 10px 0;}
     .caption {max-width: 270px;margin: 0 auto;}
     .form-field label{ font-size: 12px;}
     label.up {font-size: 10px;}
+    .add-to-cart-btn-area button {margin: 0 5px 0 0;font-size: 14px;max-width: 135px;transition: 0.3s ease;}
+    .color-area ul li, .size-area ul li {padding: 0 5px 0 0;}
+    .heading-area h4 {font-size: 24px;}
+    .product-large-view-area {width: 100%;padding: 0;}
+    .product-tubmb-area {width: 100%;}
+    .product-tubmb-area ul li a{ max-height: 100px; overflow: hidden;}
+
+    .product-tubmb-area button {height: 30px;width: 30px;font-size: 0;background: #fff;border-radius: 100px; position: absolute;top: 0;margin: auto; bottom: 0; border: 0; z-index: 1;}
+    .product-tubmb-area button:after {content: '\f105';font-family: 'FontAwesome';font-size: 20px;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;height: 23px;text-align: center;}
+    .product-tubmb-area button.slick-next{right: 15px;}
+    .product-tubmb-area button.slick-prev{left: 15px; transform: rotate(180deg);}
+    .tab-content.slick-initialized.slick-slider .fade {opacity: 1;}
 
 }
 
