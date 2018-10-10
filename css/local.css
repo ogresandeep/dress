@@ -293,6 +293,19 @@ ul.display li {display: block;margin: 10px 0;}
 .cart-area {padding: 50px 0;}
 /*end*/
 
+/*create account area*/
+.form-field small { position: absolute; font-size: 11px; bottom: -15px;}
+.create-account-btn {padding: 50px 0;}
+.create-account-btn input {width: 100%;height: 45px;line-height: 45px;padding: 0;background: #000;border: 1px solid #000;color: #fff;font-size: 16px;border-radius: 0;}
+.field-icon {position: absolute;bottom: 5px;right: 0;color: #666;}
+.create-account-form h3 {font-size: 18px;color: #222;}
+.create-account-cart-detail {border: 1px solid #999;padding: 15px;}
+.create-account-form {padding: 0 30px;}
+.create-account-form-area {border-left: 1px solid #999;}
+.field-icon b {font-weight: 500;}
+.create-account-area {padding: 50px 0;}
+/*end*/
+
 /*media*/
 
 @media(max-width:1199px){
@@ -329,6 +342,9 @@ ul.display li {display: block;margin: 10px 0;}
     .product-view-section {padding-bottom: 100px;}
     .someone-else-area {bottom: 20px;right: 0;margin: auto;text-align: center;}
     .cart-login-area {border: 1px solid #999;}
+    .create-account-form-area {border: 1px solid #999;padding: 15px 0;border-top: 0;}
+    .create-account-form {padding: 0 15px;}
+    .create-account-btn {padding: 20px 0;}
     
 }
 
@@ -373,6 +389,7 @@ ul.display li {display: block;margin: 10px 0;}
     .footer-links.colums-3 ul {column-count: 2;}
     .features-area.border .col{ border: 0;}
     .how-it-works p {font-size: 16px;line-height: 24px;}
+    .heading-area h4 {font-size: 30px;}
 
 }
 
@@ -403,17 +420,19 @@ ul.display li {display: block;margin: 10px 0;}
     .product-large-view-area {width: 100%;padding: 0;}
     .product-tubmb-area {width: 100%;}
     .product-tubmb-area ul li a{ max-height: 100px; overflow: hidden;}
-
+    .heading-area h4 {font-size: 25px;}
     .product-tubmb-area button {height: 30px;width: 30px;font-size: 0;background: #fff;border-radius: 100px; position: absolute;top: 0;margin: auto; bottom: 0; border: 0; z-index: 1;}
     .product-tubmb-area button:after {content: '\f105';font-family: 'FontAwesome';font-size: 20px;position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;height: 23px;text-align: center;}
     .product-tubmb-area button.slick-next{right: 15px;}
     .product-tubmb-area button.slick-prev{left: 15px; transform: rotate(180deg);}
     .tab-content.slick-initialized.slick-slider .fade {opacity: 1;}
+    .form-field small{ font-size: 10px;}
 
 }
 
 @media (max-width:360px){
     .subscribe-area h3 {font-size: 14px;}
     .footer-links.colums-3 ul {column-count: 1;}
+    .form-field small {font-size: 8px;}
 }
 /*end*/
