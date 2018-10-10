@@ -304,6 +304,8 @@ ul.display li {display: block;margin: 10px 0;}
 .create-account-form-area {border-left: 1px solid #999;}
 .field-icon b {font-weight: 500;}
 .create-account-area {padding: 50px 0;}
+/*end*/
+/*checkout 1*/
 .payment-detail-table table tr td {padding: 10px; font-size: 16px; color: #000;}
 .payment-detail-table table tr td:last-child {width: 100px;text-align: right;}
 .payment-detail-table table tr td:first-child {width: calc(100% - 100px);}
@@ -341,6 +343,11 @@ ul.display li {display: block;margin: 10px 0;}
 .make-payment-btn {padding: 10px 0;}
 .shipping-information-area {border-left: 1px solid #999;}
 .shipping-information {padding: 0 0px 0px 30px;}
+/*end*/
+
+/*checkout 2*/
+.cart-heading h4 {font-size: 18px;color: #000;}
+.cart-heading {text-align: center;padding: 20px 0;border-style: solid;border-color: #000;border-width: 1px 0;margin: 0 -15px;}
 /*end*/
 
 /*media*/
