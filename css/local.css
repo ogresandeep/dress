@@ -399,6 +399,21 @@ ul.display li {display: block;margin: 10px 0;}
 .placeoder-btn input {width: 100%;text-align: center;color: #fff;background: #000;border: 0;padding: 0;}
 .terms-link p {line-height: normal;text-align: center;font-weight: 500;}
 .terms-link p a {display: block;color: #e68582;font-weight: 400;}
+/*end*/
+
+/*faq*/
+
+.faq-accordian .card-header a {font-size: 14px;color: #000;padding: 13px 50px 13px 15px;display: block;position: relative;border: 1px solid #ccc;border-bottom: 0; font-weight: 600;}
+.faq-accordian .card:last-child .card-header a {border-bottom: 1px solid #ccc;}
+.faq-accordian .card-header {padding: 0;border: 0;background: transparent;}
+.faq-accordian .card {border: 0;}
+.faq-accordian .card-body {background: #f1f1f1;line-height: normal;font-size: 14px;letter-spacing: 0.3px;border-style: solid;border-color: #ccc;border-width: 1px 1px 0 1px;}
+.faq-accordian .card:last-child .card-body{border-width: 0 1px 1px 1px;}
+.faq-accordian .card-header a.collapsed:after {height: 104%;width: 42px;background: #000;content: "\f067";font-family: 'FontAwesome';position: absolute;right: -1px;top: -1px;color: #fff;text-align: center;line-height: 40px;font-weight: 400;}
+.faq-accordian .card-header a:after{content: "\f068";height: 104%;width: 42px;background: #e68582; font-family: 'FontAwesome';position: absolute;right: -1px;top: -1px;color: #fff;text-align: center;line-height: 40px;font-weight: 400;}
+/*end*/
+
+
 /*media*/
 
 @media(max-width:1199px){
