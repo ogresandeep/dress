@@ -28,6 +28,8 @@ $(document).ready(function(){
     /*date picker*/
     $( "#date1" ).datepicker();
 
+    //$( "#date2" ).datepicker();
+
     /*image magnifir*/
     $('.related-product-slider').slick({
         infinite: true,
